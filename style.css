@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 * {
     margin: 0;
@@ -20,14 +20,71 @@
 
 .title-black {
     color: black;
+    position: relative;
+    top: 150px;
+    right: 20px;
+    z-index: 3;
 }
 
 .title-red {
     color: darkred;
     opacity: 0.5;
+    position: relative;
+    z-index: 2;
 }
 
 .title-blue {
     color: purple;
-    opacity: 0.5
+    opacity: 0.5;
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+    z-index: 1;
+}
+
+.header-btn-black {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.header-btn-black:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.header-btn-red {
+    background-color: darkred;
+    width: 300px;
+    height: 50px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-60%);
+    z-index: 2;
+}
+
+.header-btn-blue {
+    background-color: purple;
+    width: 300px;
+    height: 50px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-40%);
+    z-index: 1;
 }
