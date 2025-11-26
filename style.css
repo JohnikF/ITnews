@@ -24,6 +24,10 @@
     top: 150px;
     right: 20px;
     z-index: 3;
+    animation-name: jump;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 .title-red {
@@ -31,6 +35,7 @@
     opacity: 0.5;
     position: relative;
     z-index: 2;
+    animation: jump 3s ease 0s infinite alternate;
 }
 
 .title-blue {
@@ -40,6 +45,7 @@
     bottom: 150px;
     left: 20px;
     z-index: 1;
+    animation: jump 3s ease 1s infinite reverse;
 }
 
 .header-btn-black {
@@ -87,4 +93,18 @@
     left: 50%;
     transform: translate(-40%,-40%);
     z-index: 1;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
