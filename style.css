@@ -9,7 +9,7 @@
 .header {
     font-family: "Montserrat", sans-serif;
     background-color: whitesmoke;
-    height: 100vh;
+    height: 200vh;
 }
 
 .header-title {
@@ -93,6 +93,17 @@
     left: 50%;
     transform: translate(-40%,-40%);
     z-index: 1;
+}
+
+.go-up-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px gray;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
 }
 
 @keyframes jump {
