@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     font-family: "Montserrat", sans-serif;
     background-color: whitesmoke;
-    height: 200vh;
+    height: 100vh;
 }
 
 .header-title {
@@ -104,6 +108,12 @@
     position: fixed;
     right: 40px;
     bottom: 40px;
+}
+
+.articles-container {
+    width: 1000px;
+    padding: 30px;
+    margin: auto;
 }
 
 @keyframes jump {
