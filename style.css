@@ -116,6 +116,46 @@ html {
     margin: auto;
 }
 
+.article {
+    font-family: "Roboto", sans-serif;
+    border: 2px solid black;
+    margin-top: 100px;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    position: sticky ;
+    top: 0;
+    z-index: 10;
+}
+
+.article-category {
+    text-align: center;
+    padding: 10px;
+    background-color: tomato;
+    color: black;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.article-image {
+    width: 100%;
+    filter: opacity(0.9) brightness(1.1);
+    position: sticky;
+    top: 0;
+}
+
+.article-text {
+    padding: 40px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 9;
+}
+
 @keyframes jump {
     0% {
         transform: translate(0, 0);
