@@ -156,6 +156,12 @@ html {
     z-index: 9;
 }
 
+.featured-text {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 @keyframes jump {
     0% {
         transform: translate(0, 0);
